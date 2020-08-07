@@ -1,0 +1,12 @@
+name = "ham-hugo"
+license = "MIT"
+licenselink = "https://github.com/khayyamsaleem/ham-hugo/blob/master/LICENSE"
+description = "A simple theme for a combination of blog posts and instructional content"
+homepage = "khayyam.me"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Khayyam Saleem"
+  homepage = "khayyam.me"
