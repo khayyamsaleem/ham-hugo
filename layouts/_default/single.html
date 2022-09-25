@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>khayyam - {{ .Title }}</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>{{.Title}}</h1>
-      <div class="content">
-        {{ .Content }}
-      </div>
-    </div>
-    </div>
-  </body>
-</html>
+{{ define "main" }}    
+<div class="container">
+  <h1>{{.Title}}</h1>
+  <div class="content-wrapper">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
