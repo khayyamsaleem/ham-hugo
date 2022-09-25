@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      {{ partial "head.html" . }}
-    </head>
-    <body>
-        {{ partial "header.html" . }}
-        <div id="content">
-        {{ block "main" . }}{{ end }}
-        </div>
-        {{ partial "footer.html" . }}
-    </body>
+  <head>
+    {{ partial "head.html" . }}
+    <style type="text/css">
+      body {
+        margin:40px auto;
+        max-width:650px;
+        line-height:1.6;
+        font-size:18px;
+        color:#444;
+        padding:0 10px
+      }
+      h1,h2,h3 {
+        line-height:1.2
+      }
+    </style>
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <div id="content">
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+  </body>
 </html>
